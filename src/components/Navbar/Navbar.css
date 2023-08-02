@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko&display=swap');
+
+:root {
+  --primary-color: #111;
+  --hovered-color: #f6701d;
+}
+
+a {
+  color: var(--primary-color);
+}
+
+a:hover {
+  color: var(--primary-color);
+}
+
+nav {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  box-shadow: whitesmoke 1px 1px;
+}
+
+nav img {
+  width: 55px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+
+nav ul li:last-child {
+  border-left: 1px solid black;
+  padding-right: 0.5em;
+}
+
+nav .active {
+  color: var(--hovered-color);
+}
+
+nav .active:hover::after {
+  width: 0 !important;
+}
+
+nav .active:hover ::before {
+  width: 0 !important;
+}
+
+nav h1 {
+  font-family: 'Teko', sans-serif !important;
+  font-weight: 500;
+  text-shadow: 0 0 cadetblue;
+}
+
+#collapsibleNavId {
+  flex-grow: 0;
+}
+
+.navLink {
+  position: relative;
+  margin: 0 1rem;
+}
+
+.navLink::after {
+  position: absolute;
+  content: "";
+  width: 0;
+  left: 0;
+  bottom: -7px;
+  background: var(--hovered-color);
+  height: 2px;
+  transition: 0.3s ease-out;
+}
+
+.navLink::before {
+  width: 0%;
+  inset: 0;
+  color: var(--hovered-color);
+  overflow: hidden;
+  transition: 0.3s ease-out;
+}
+
+.navLink:hover::after {
+  width: 100%;
+}
+
+.navLink:hover::before {
+  width: 100%;
+}
+
+.nav-item {
+  align-items: baseline;
+}
+
+.nav-item:has(span) {
+  margin-right: 0 !important;
+}
+
+.nav-item:has(span) .navLink {
+  margin-right: 0 !important;
+}
+
+.dropdown-toggle {
+  cursor: pointer;
+}
+
+.rounded-pill {
+  position: absolute !important;
+  left: 100%;
+  top: 0;
+  transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: 768px) {
+  nav ul li:last-child {
+    border: none;
+    margin-left: 1em;
+  }
+
+  .navbar-nav {
+    min-height: 30vh;
+  }
+
+  .nav-item {
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+    padding-left: 0;
+  }
+
+  .nav-item:has(.dropdown-toggle) {
+    padding-left: 0.9em;
+    max-width: 200px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .nav-item span {
+    margin-right: 1rem !important;
+  }
+
+  nav ul li:last-child span {
+    position: relative;
+  }
+
+  .rounded-pill {
+    position: relative !important;
+    left: 0.5em;
+    transform: translate(0, 0);
+  }
+
+  .nav-item:has(.d-none) {
+    margin: 0;
+  }
+}

@@ -1,0 +1,21 @@
+.summary {
+  max-height: 63vh;
+  overflow: auto;
+}
+
+.summary::-webkit-scrollbar {
+  width: 10px;
+  background-color: rgb(255, 255, 255);
+  border-bottom-right-radius: 5px;
+}
+
+.summary::-webkit-scrollbar-thumb {
+  background: gray;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .summary {
+    max-height: 100%;
+  }
+}

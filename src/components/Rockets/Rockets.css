@@ -1,0 +1,334 @@
+.reserveBtn {
+  --color: green;
+  --color2: white;
+
+  border-radius: 6px;
+  transition: 0.5s;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  z-index: 1;
+  color: white;
+  font-weight: 500;
+}
+
+.reserveBtn::after,
+.reserveBtn::before {
+  content: '';
+  display: block;
+  height: 100%;
+  width: 100%;
+  transform: skew(90deg) translate(-50%, -50%);
+  position: absolute;
+  inset: 50%;
+  left: 25%;
+  z-index: -1;
+  transition: 0.5s ease-out;
+  background-color: var(--color);
+}
+
+.reserveBtn::before {
+  top: -50%;
+  left: -25%;
+  transform: skew(90deg) rotate(180deg) translate(-50%, -50%);
+}
+
+.reserveBtn2 {
+  position: relative;
+  overflow: hidden;
+  transition: all 0.5s ease-in;
+  z-index: 1;
+}
+
+.reserveBtn2::before,
+.reserveBtn2::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 0;
+  height: 100%;
+  transform: skew(15deg);
+  transition: all 0.5s;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.reserveBtn2::before {
+  left: -10px;
+  background: cornflowerblue;
+}
+
+.reserveBtn2::after {
+  right: -10px;
+  background: #234567;
+}
+
+.reserveBtn2 span {
+  color: white;
+  transition: all 0.3s ease-in;
+}
+
+.rocketLink {
+  display: flex;
+  width: max-content;
+  align-items: center;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 17px;
+  padding: 0.8em 1.3em 0.8em 0.9em;
+  color: white;
+  background: #ad5389;
+  background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+  border: none;
+  letter-spacing: 0.05em;
+}
+
+.cta span {
+  position: relative;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: #234567;
+}
+
+.cta svg {
+  position: relative;
+  top: 0;
+  margin-left: 10px;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke: #234567;
+  stroke-width: 2;
+  transform: translateX(-5px);
+  transition: all 0.3s ease;
+}
+
+.rocketLink svg {
+  margin-right: 3px;
+  transform: rotate(30deg);
+  transition: transform 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+}
+
+.rocketLink span {
+  transition: transform 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+}
+
+.rocketContainer {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+}
+
+.rocketContainer img {
+  width: 250px;
+  height: 200px;
+}
+
+#rocketCarousel {
+  width: 40vw;
+}
+
+#rocketCarousel img {
+  height: 70vh;
+}
+
+.featureItems {
+  list-style: none;
+  font-weight: lighter;
+  padding-top: 1em;
+  height: 70vh;
+}
+
+.featureContainer::-webkit-scrollbar {
+  width: 10px;
+  background-color: rgb(255, 255, 255);
+  border-bottom-right-radius: 5px;
+}
+
+.featureContainer::-webkit-scrollbar-thumb {
+  background: linear-gradient(rgba(27, 1, 88, 0.5), rgba(24, 14, 66, 0.5));
+  border-radius: 10px;
+}
+
+.featureItems > li {
+  border-left: 5px solid turquoise;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
+  padding: 1em 1em;
+  margin: 1em 0.5em;
+  font-size: 1.2em;
+}
+
+.featureItems > :first-child,
+.featureItems > :last-child {
+  margin: 0.2em 0.5em !important;
+}
+
+.featureItems > :last-child {
+  border: none;
+  box-shadow: none;
+}
+
+.featureItems > li > :first-child {
+  font-weight: normal !important;
+}
+
+.feature {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.featureItems > li > div {
+  margin-left: 2em;
+  padding-left: 1em;
+  border-left: 5px solid goldenrod;
+  font-weight: lighter;
+}
+
+.featureContainer button {
+  display: flex;
+  align-items: center;
+}
+
+.featureContainer h3 {
+  font-size: 1em;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+  width: 17%;
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  background-color: black;
+  border-radius: 50%;
+  background-size: 100% 80%;
+  height: 2.5em;
+  width: 2.5em;
+}
+
+.cta {
+  position: relative;
+  margin: auto;
+  padding: 12px 18px;
+  transition: all 0.2s ease;
+  border: none;
+  background: none;
+}
+
+.cta::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  border-radius: 50px;
+  background: #b1dae7;
+  width: 45px;
+  height: 45px;
+  transition: all 0.3s ease;
+}
+
+@media only screen and (min-width: 576px) and (max-width: 768px) {
+  #rocketCarousel img {
+    height: auto !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  nav:has(.show) {
+    transition: 0.5s ease;
+    background-color: aliceblue;
+  }
+
+  .rocketContainer {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  }
+
+  .rocketContainer img {
+    width: 100%;
+    height: 100%;
+  }
+
+  #rocketCarousel img {
+    height: 50vh;
+    width: auto;
+  }
+
+  .rocketDescription {
+    margin-top: 20px;
+  }
+
+  #rocketCarousel {
+    width: 100%;
+  }
+
+  .featureContainer {
+    padding: 1.5rem 0 0 0 !important;
+  }
+
+  .featureContainer button {
+    height: 100%;
+  }
+
+  .featureItems {
+    padding: 1.5rem 0 0 0;
+    height: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .reserveBtn:hover::before {
+    transform: skew(45deg) rotate(180deg) translate(-50%, -50%);
+  }
+
+  .reserveBtn:hover::after {
+    transform: skew(45deg) translate(-50%, -50%);
+  }
+
+  .reserveBtn:hover {
+    color: var(--color2);
+    border-color: var(--color);
+  }
+
+  .reserveBtn:active {
+    filter: brightness(0.7);
+    transform: scale(0.98);
+  }
+
+  .reserveBtn2:hover::before,
+  .reserveBtn2:hover::after {
+    width: 58%;
+  }
+
+  .rocketLink:hover svg {
+    transform: translateX(5px) rotate(90deg);
+    color: white;
+  }
+
+  .rocketLink:hover span {
+    transform: translateX(7px);
+    color: white;
+  }
+
+  .reserveBtn2:hover span {
+    color: white;
+    transition: 0.3s;
+  }
+
+  .cta:hover::before {
+    width: 100%;
+    background: #b1dae7;
+  }
+
+  .cta:hover svg {
+    transform: translateX(0);
+  }
+
+  .cta:active {
+    transform: scale(0.95);
+  }
+}
