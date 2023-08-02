@@ -19,7 +19,7 @@
   - [🤝 Contributing ](#-contributing-)
   - [⭐️ Show your support ](#️-show-your-support-)
   - [🙏 Acknowledgments ](#-acknowledgments-)
-    - [📝 License](#-license)
+  - [📝 License](#-license)
 
 <!-- PROJECT DESCRIPTION -->
 
@@ -142,9 +142,13 @@ Your app is ready to be deployed!
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
 ## 👥 Authors <a name="author"></a>
+👤 **Haliljon Juraboev** 
+- GitHub: [@githubhaliljon](https://github.com/haliljon)
+- Twitter: [@twitterhaliljon1](https://twitter.com/haliljon1)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/juraboev-haliljon)
+
 
 👤 **George M'sapenda**
-
 - GitHub: [@github](https://github.com/c00p75)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/georgemsapenda/)
 
@@ -153,10 +157,7 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 FUTURE FEATURES
 
 ## 🔭 Future Features <a name="future-features"></a>
-
->
-
-- [ ] **[I would like to improve the look and feel of the application]**
+- Persist data on database
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -175,16 +176,7 @@ Please consider giving a ⭐️ if you like this project!
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
-
-> Give credit to everyone who inspired your codebase.
-
 I would like to thank [Microverse](https://www.microverse.org/) for providing this project in their curriculum.
-
-I also thank 👤 **Haliljon Juraboev** for his contribution in the first version of this project.
-- GitHub: [@githubhaliljon](https://github.com/haliljon)
-- Twitter: [@twitterhaliljon1](https://twitter.com/haliljon1)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/juraboev-haliljon)
-
 
 P.S. stackoverflow and google 😉
 
