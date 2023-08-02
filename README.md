@@ -88,7 +88,7 @@
 
 ## Deployment Link:
 
-Live demo: [space-travelers-hub](https://space-travelers-hub-7yjv.onrender.com/)
+Live demo: [space-travelers-hub](https://space-x-travellers.onrender.com/)
 
 ## 💻 Getting Started with Create React App <a name="getting-started"></a>
 
